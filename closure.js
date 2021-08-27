@@ -35,6 +35,9 @@ const add1 = (function () {
     return counter;
   };
 })();
+//let counter = 0; does reinitialize the variable because of
+//the closure
+let counter = 0;
 console.log(add1());
 console.log(add1());
 console.log(add1());
