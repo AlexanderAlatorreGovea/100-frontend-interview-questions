@@ -2,8 +2,8 @@ const prices = [1, 2, 3, 10, 20, 30];
 
 const mapExample = prices.map((value) => value + 1);
 const filterExample = prices.filter((value) => value < 10);
-const reduceExample = prices.reduce((total, current) => {
-  return total += current;
+const reduceExample = prices.reduce((total, currentValue) => {
+  return total += currentValue
 }, 0);
 
 const reduceArrayExample = prices.reduce((accumulator, value) => {
