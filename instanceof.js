@@ -1,5 +1,4 @@
-console.log('hello world' instanceof
-    String);
+console.log("hello world" instanceof String);
 
 class Circle {}
 const circle = new Circle();
