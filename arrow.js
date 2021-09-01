@@ -18,7 +18,17 @@ const user = {
   lastName: 'Israel',
   fullName: () => {
     return `${this.firstName} ${this.lastName}`;
+  },
+  pa: function() {
+    const name = this.name
+
+    const n = () => {
+      return `${name} `;
+    }
+    n()
   }
 };
 
 console.log(user.fullName());
+console.log(user.pa());
+

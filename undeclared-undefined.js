@@ -8,4 +8,3 @@ console.log(user.firstName);
 console.log(example);
 
 console.log(example2)
-;
