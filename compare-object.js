@@ -1,18 +1,18 @@
 const user1 = {
-  first: 'Dylan',
-  last: 'Israel'
+  first: "Dylan",
+  last: "Israel",
 };
 const user2 = {
-  last: 'Israel',
-  first: 'Dylan'
+  last: "Israel",
+  first: "Dylan",
 };
 const stringObj1 = JSON.stringify(user1);
 const stringObj2 = JSON.stringify(user2);
 
-function isSameObject (obj1, obj2) {
+function isSameObject(obj1, obj2) {
   const props1 = Object.getOwnPropertyNames(obj1);
   const props2 = Object.getOwnPropertyNames(obj2);
-
+  console.log(props1);
   if (props1.length !== props2.length) {
     return false;
   }
