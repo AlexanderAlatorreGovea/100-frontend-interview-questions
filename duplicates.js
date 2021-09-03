@@ -8,7 +8,8 @@ console.log(numSet);
 
 const singleValueArr = [];
 
-nums.forEach((value) => {
+
+nums?.forEach((value) => {
   if (!singleValueArr.includes(value)) {
     singleValueArr.push(value);
   }
