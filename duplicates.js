@@ -15,10 +15,3 @@ nums?.forEach((value) => {
 });
 
 console.log(singleValueArr);
-
-
-const ass = async () => {
-   const response = await fetch(' ');
-   const json = await response.json();
-  console.log(json)
-}
