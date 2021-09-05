@@ -7,7 +7,7 @@ const example3 = NaN;
 const example4 = 0;
 const example5 = '';
 const example6 = false;
-const example7 = 1;
+const example7 = -0;
 
 console.log(!!example1);
 console.log(!!example2);
