@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        box-sizing: border-box;
+      }
+
+      /* TRIANGLE */
+
+      .triangle {
+        height: 0;
+        width: 0;
+        border-top: 100px solid transparent;
+        border-bottom: 100px solid transparent;
+        border-left: 100px solid transparent;
+        border-right: 100px solid blue;
+      }
+      /* TRIANGLE */
+
+      /* BLOCK INSIDE BLOCK */
+      .blue {
+        height: 200px;
+        width: 200px;
+        background-color: blue;
+        position: relative;
+      }
+      .red {
+        height: 50px;
+        width: 50px;
+        background-color: red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        /* 
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        */
+      }
+      /* BLOCK INSIDE BLOCK */
+    </style>
+  </head>
+  <body>
+    <!-- TRIANGLE -->
+    <div class="triangle"></div>
+    <!-- TRIANGLE -->
+
+    <!--AlLIGN BLOCK ELEMENT INSIDE ANOTHER BLOCK ELEMENT -->
+    <div class="blue">
+      <div class="red"></div>
+    </div>
+    <!--AlLIGN BLOCK ELEMENT INSIDE ANOTHER BLOCK ELEMENT -->
+  </body>
+</html>

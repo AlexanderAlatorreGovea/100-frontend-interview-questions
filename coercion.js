@@ -2,7 +2,7 @@ const total = 2 + 3 + '7';
 console.log(total);
 console.log(typeof total);
 
-
+ 
 //explicit type coersion 
 //is when you transform a number into a string
 //or a 0 into a boolean 

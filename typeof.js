@@ -29,7 +29,7 @@ console.log(Array.isArray({}));
 //Type of null returns an object
 console.log(typeof null);
 console.log(null instanceof Object);
-
+ 
 //Date and regex returns an object
 console.log(typeof new Date() === 'object');
 console.log(typeof /regex/ === 'object');
