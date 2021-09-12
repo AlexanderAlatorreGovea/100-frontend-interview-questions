@@ -66,6 +66,23 @@
       /* BLOCK INSIDE BLOCK */
 
       /* GRID SYSTEM */
+      .wrapper {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1rem;
+        /* grid-row-gap: 1rem;
+        grid-column-gap: 1rem ; */
+      }
+      .wrapper > div {
+        background-color: #eee;
+        padding: 1em;
+      }
+      .wrapper > div:nth-child(odd) {
+        background-color: #ddd;
+      }
+      /* GRID SYSTEM */
     </style>
   </head>
   <body>
@@ -93,15 +110,46 @@
           </li>
         </ul>
       </div>
-
-      <div class="grid-container">
-          <div class="gri-item grid-item-1"></div>
-          <div class="gri-item grid-item-2"></div>
-          <div class="gri-item grid-item-3"></div>
-          <div class="gri-item grid-item-4"></div>
-
-      </div>
-
     </nav>
+
+    <div class="wrapper">
+      <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure quia
+        corporis magni voluptates sapiente expedita natus. Explicabo maiores
+        quidem autem eveniet ea. Incidunt eius quidem, ipsam suscipit illum
+        facere modi! Fuga dolor quasi voluptatum provident! Optio incidunt
+        tenetur sit id impedit rem nihil pariatur officiis placeat! Officia
+        minus veniam ex necessitatibus omnis labore suscipit consequuntur,
+        assumenda quidem sed numquam. Libero, sit. Facere, porro quisquam in
+        corporis possimus molestiae, veniam error voluptate voluptatem pariatur
+        laborum unde laboriosam. Hic eaque ad dolore.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum rerum
+        excepturi voluptates at quam repudiandae maiores odio sed beatae,
+        aliquid quos quaerat soluta delectus iure explicabo, reprehenderit, eos
+        unde eius incidunt eum? Voluptatem, officia dolores! Voluptates minus
+        dolorum velit dignissimos.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum rerum
+        excepturi voluptates at quam repudiandae maiores odio sed beatae,
+        aliquid quos quaerat soluta delectus iure explicabo, reprehenderit, eos
+        unde eius incidunt eum? Voluptatem, officia dolores! Voluptates minus
+        dolorum velit dignissimos.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum rerum
+        excepturi voluptates at quam repudiandae maiores odio sed beatae,
+        aliquid quos quaerat soluta delectus iure explicabo, reprehenderit, eos
+        unde eius incidunt eum? Voluptatem, officia dolores! Voluptates minus
+        dolorum velit dignissimos.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+        aperiam cum placeat enim praesentium iste expedita consequatur porro,
+        itaque ullam?
+      </div>
+    </div>
   </body>
 </html>

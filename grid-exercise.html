@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS grid</title>
+    <style>
+      body {
+        box-sizing: border-box;
+      }
+      h1 {
+        text-align: center;
+      }
+
+      .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem;
+        /* This is to set the height of the row*/
+        grid-auto-rows: minmax(100px, auto);
+      }
+
+      .wrapper > div {
+        background-color: #eee;
+        padding: 1em;
+      }
+      .wrapper > div:nth-child(odd) {
+        background-color: #ddd;
+      }
+
+      .nested {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 70px;
+        grid-gap: 1em;
+      }
+      .nested > div {
+        border: #333 1px solid;
+        padding: 1em;
+        text-align: center;
+      }
+
+      .new-wrapper {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 1rem;
+      }
+
+      .new-wrapper > div {
+        background-color: #eee;
+        padding: 1em;
+      }
+
+      .new-wrapper > div:nth-child(odd) {
+        background-color: #ddd;
+      }
+      .box-1 {
+        /* align-self: start; */
+        grid-column: 1/3;
+        grid-row: 1/3;
+      }
+
+      .box-2 {
+        /* justify-self: end; */
+        grid-column: 3;
+        grid-row: 1/3;
+      }
+      .box-3 {
+        grid-column: 2/4;
+        grid-row: 3;
+      }
+
+      .box-4 {
+        grid-column: 1;
+        grid-row: 2/4;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Grid System</h1>
+
+    <div class="wrapper">
+      <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure quia
+        corporis magni voluptates sapiente expedita natus. Explicabo maiores
+        quidem autem eveniet ea. Incidunt eius quidem, ipsam suscipit illum
+        facere modi! Fuga dolor quasi voluptatum provident! Optio incidunt
+        tenetur sit id impedit rem nihil pariatur officiis placeat! Officia
+        minus veniam ex necessitatibus omnis labore suscipit consequuntur,
+        assumenda quidem sed numquam. Libero, sit. Facere, porro quisquam in
+        corporis possimus molestiae, veniam error voluptate voluptatem pariatur
+        laborum unde laboriosam. Hic eaque ad dolore.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum rerum
+        excepturi voluptates at quam repudiandae maiores odio sed beatae,
+        aliquid quos quaerat soluta delectus iure explicabo, reprehenderit, eos
+        unde eius incidunt eum? Voluptatem, officia dolores! Voluptates minus
+        dolorum velit dignissimos.
+      </div>
+      <div class="nested">
+        <div>grid</div>
+        <div>grid</div>
+        <div>grid</div>
+        <div>grid</div>
+        <div>grid</div>
+        <div>grid</div>
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum rerum
+        excepturi voluptates at quam repudiandae maiores odio sed beatae,
+        aliquid quos quaerat soluta delectus iure explicabo, reprehenderit, eos
+        unde eius incidunt eum? Voluptatem, officia dolores! Voluptates minus
+        dolorum velit dignissimos.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+        aperiam cum placeat enim praesentium iste expedita consequatur porro,
+        itaque ullam?
+      </div>
+    </div>
+
+    <div class="new-wrapper">
+      <div class="box box-1">Box 1</div>
+      <div class="box box-2">Box 2</div>
+      <div class="box box-3">Box 3</div>
+      <div class="box box-4">Box 4</div>
+    </div>
+  </body>
+</html>
