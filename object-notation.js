@@ -18,3 +18,4 @@ for (let property in user) {
   console.log(property);
   console.log(user[property]);
 }
+

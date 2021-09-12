@@ -12,3 +12,11 @@ console.log(!!num)
 console.log(typeof String(5));
 console.log(typeof Boolean(0));
 console.log(typeof Number('5'));
+
+
+
+function x(...args) {
+    console.log(args)
+}
+
+x(1,3,4)

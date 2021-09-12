@@ -83,6 +83,23 @@
         background-color: #ddd;
       }
       /* GRID SYSTEM */
+
+      /* BEM CONVENTIONS */
+      .block {
+          background-color: red;
+          height: 100px;
+          width: 100px;
+      }
+      .block__element{
+          background-color: blue;
+          height: 50px;
+          width: 50px;
+      }
+
+      .block__element--modifier {
+          background-color: black;
+      }
+      /* BEM CONVENTIONS */
     </style>
   </head>
   <body>
@@ -150,6 +167,12 @@
         aperiam cum placeat enim praesentium iste expedita consequatur porro,
         itaque ullam?
       </div>
+    </div>
+
+    <div class="block">
+        <div class="block__element"></div>
+        <div class="block__element block__element--modifier"></div>
+
     </div>
   </body>
 </html>
