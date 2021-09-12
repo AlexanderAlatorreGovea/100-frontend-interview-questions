@@ -43,7 +43,29 @@
         justify-content: center; 
         */
       }
+
+      nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: black;
+        color: white;
+        align-items: center;
+        padding: 20px;
+      }
+      .right-container ul {
+        display: flex;
+        text-decoration: none;
+        justify-content: space-between;
+      }
+
+      .right-container ul li {
+        list-style-type: none;
+        margin-left: 20px;
+      }
       /* BLOCK INSIDE BLOCK */
+
+      /* GRID SYSTEM */
     </style>
   </head>
   <body>
@@ -56,5 +78,30 @@
       <div class="red"></div>
     </div>
     <!--AlLIGN BLOCK ELEMENT INSIDE ANOTHER BLOCK ELEMENT -->
+    <nav>
+      <div>logo</div>
+      <div class="right-container">
+        <ul>
+          <li>
+            <a>links</a>
+          </li>
+          <li>
+            <a>links</a>
+          </li>
+          <li>
+            <a>links</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="grid-container">
+          <div class="gri-item grid-item-1"></div>
+          <div class="gri-item grid-item-2"></div>
+          <div class="gri-item grid-item-3"></div>
+          <div class="gri-item grid-item-4"></div>
+
+      </div>
+
+    </nav>
   </body>
 </html>
