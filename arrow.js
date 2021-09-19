@@ -19,10 +19,10 @@ const user = {
   fullName: () => {
     return `${this.firstName} ${this.lastName}`;
   },
-  pa: function() {
+  pa: () => {
     const name = this.name
 
-    const n = () => {
+    return () => {
       return `${name} `;
     }
     n()
@@ -30,5 +30,6 @@ const user = {
 };
 
 console.log(user.fullName());
-console.log(user.pa());
+const newPa = user.pa();
+console.log(newPa());
 

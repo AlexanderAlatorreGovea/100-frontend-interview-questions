@@ -41,3 +41,20 @@ let counter = 0;
 console.log(add1());
 console.log(add1());
 console.log(add1());
+
+const x = function () {
+  let xA = 0;
+
+  return () => {
+    return (xA = 3);
+  };
+};
+
+const b = x();
+console.log(b());
+
+//const arr = [1, 3,3 ]
+//arr.length = 0
+
+let arr;
+console.log(arr);
